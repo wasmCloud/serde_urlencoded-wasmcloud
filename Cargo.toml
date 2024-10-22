@@ -1,5 +1,5 @@
 [package]
-name = "serde_urlencoded"
+name = "serde_urlencoded-wasmcloud"
 version = "0.7.1" # bump in documentation link and in README on update
 authors = ["Anthony Ramine <n.oxyde@gmail.com>"]
 license = "MIT OR Apache-2.0"
@@ -18,7 +18,7 @@ travis-ci = {repository = "nox/serde_urlencoded"}
 test = false
 
 [dependencies]
-form_urlencoded = "1"
+form_urlencoded = { package = "form_urlencoded-wasmcloud", version = "1", git = "https://github.com/wasmcloud/rust-url-wasmcloud", branch = "main" }
 itoa = "1"
 ryu = "1"
 serde = "1.0.69"
